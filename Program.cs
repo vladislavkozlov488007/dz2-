@@ -1,20 +1,6 @@
-﻿//Подходит так же для решения чисел больше 4
-Console.WriteLine ("Введите любое трехзначное число:");
-int num = Convert.ToInt32(Console.ReadLine());
-int d = 0;
-if (num > 99)
-{
- while (num >= 1000)
-    {
- num /= 10;
-    }
- if (num >= 100 && num <= 999)
-    {
- num /= 10;
- d = num % 10;
-    }
- Console.WriteLine($"{d}");
-}
-else
+﻿Console.WriteLine("Введите пятизначное число");
+int == Convert.ToInt32(Console.ReadLine());
 
- Console.WriteLine($"Третьей цифры нет");
+if ((n/10000) == (n %10)) n = (n/10) % 1000;
+if ((n/100) == (n %10)) Console.WriteLine("Полиндром");
+else System.Console.WriteLine("Не полиндром");
